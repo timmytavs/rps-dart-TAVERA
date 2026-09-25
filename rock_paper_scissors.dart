@@ -1,7 +1,7 @@
 import 'dart:io';
 
 /// Gets the player's name.
-String getPlayerName(String player) {
+String kuhaPlayerName(String player) {
   stdout.write("Enter $player: ");
   String? input = stdin.readLineSync();
 
@@ -61,8 +61,8 @@ String? pag_decide_sa_Winner(String lihok1, String lihok2) {
 void main() {
   print("=== ROCK PAPER SCISSORS ===");
 
-  String player1 = getPlayerName("Player 1");
-  String player2 = getPlayerName("Player 2");
+  String player1 = kuhaPlayerName("Player 1");
+  String player2 = kuhaPlayerName("Player 2");
 
   int score1 = 0;
   int score2 = 0;
